@@ -255,7 +255,12 @@ app.post('/api/requests/:id/complete', (req, res) => {
     );
 });
 
-// запуск сервера
-app.listen(PORT, () => {
-    console.log(`Сервер запущен на http://localhost:${PORT}`);
-});
+
+// запускаем сервер только если файл вызван напрямую (не тестами)
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`Сервер запущен на http://localhost:${PORT}`);
+    });
+}
+
+module.exports = app; // экспортируем app для тестов
