@@ -1,0 +1,73 @@
+.request-list {
+  padding: 20px;
+}
+
+.request-card {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.request-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.request-header h3 {
+  margin: 0;
+  color: #333;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-badge.status-new { background: #e3f2fd; color: #1976d2; }
+.status-badge.status-assigned { background: #fff3e0; color: #f57c00; }
+.status-badge.status-progress { background: #e8f5e8; color: #388e3c; }
+.status-badge.status-done { background: #e0e0e0; color: #424242; }
+.status-badge.status-canceled { background: #ffebee; color: #c62828; }
+
+.request-details {
+  margin: 15px 0;
+}
+
+.request-details p {
+  margin: 5px 0;
+}
+
+.request-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.request-actions select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.request-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.cancel-btn { background: #ffebee; color: #c62828; }
+.take-btn { background: #e3f2fd; color: #1976d2; }
+.complete-btn { background: #e8f5e8; color: #388e3c; }
+
+.request-actions button:hover {
+  opacity: 0.9;
+}
